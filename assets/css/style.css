@@ -1,0 +1,179 @@
+/***************************************
+GLOBAL ********************************/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #333;
+    margin: 0;
+    background-color: #fff;
+    min-width: 360px;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 780px;
+    margin: 0  auto;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: 500;
+}
+
+.enterprise h1 {
+    font-family: sans-serif;
+}
+
+.header {
+    background-image: linear-gradient(#d7c7b7 1%, white 30%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.enterprise {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.uppercase {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.icon {
+    font-size: 2.5rem;
+    font-family: 'sans-serif';
+    text-align: center;
+}
+
+.icon::before, .icon::after {
+    content: "  \f005  ";
+    color: #950000;
+    font-size: 1.1rem;
+    vertical-align: top;
+    margin: 1rem;
+    font-family: "FontAwesome";
+}
+
+.start-title {
+    text-align: start;
+}
+
+.nav {
+    background-color: #ebe3db;
+}
+
+.nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav li:first-child > a {
+    background-color: #4c4343;
+    color:#f1f1f1;
+    transition: all 1s;
+}
+
+.nav li:first-child > a:hover {
+    background-color: #950000;
+    color: #f1f1f1;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 1.5rem;
+    border-bottom: 1px solid #4c4343;
+    color: #4c4343;
+    transition: all 0.5s;
+}
+
+.nav a:hover {
+    background-color: #950000;
+    color: #f1f1f1;
+}
+
+
+/***************************************
+VERSION TABLETTE **********************/
+
+@media screen and (min-width: 780px) {
+    .nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav li {
+        width: 15%;
+    }
+
+    .nav a {
+        border-bottom: none;
+    }
+
+    .container {
+        max-width: 98rem;
+        margin: 0 auto;
+    }
+}
+
+/******************************************
+VERSION DESKTOP **************************/
+
+@media screen and (min-width: 980px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav {
+        background-color: transparent;
+    }
+
+    .nav a {
+        background-color: #ebe3db;
+    }
+
+    .nav li {
+        width: auto;
+    }
+
+    .d-nav {
+        min-width: 40%;
+    }
+
+    .d-logo {
+        display:flex;
+        align-items: center;
+
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .enterprise {
+        display: flex;
+    }
+
+    f-menu {
+        display: flex;
+    }
+
+    f-menu article {
+        width: 30%;
+    }
+
+}
